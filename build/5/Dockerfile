@@ -1,5 +1,7 @@
 FROM logstash:5.1.2
 
+MAINTAINER Bertrand Goubot <bgoubot@yahoo.fr> 
+
 # Install additional logstash plugins.
 RUN logstash-plugin install logstash-filter-translate
 RUN logstash-plugin install logstash-input-jmx
