@@ -5,7 +5,6 @@ MAINTAINER Bertrand Goubot <bgoubot@yahoo.fr>
 # Install additional logstash plugins.
 RUN logstash-plugin install logstash-filter-translate
 RUN logstash-plugin install logstash-input-jmx
-RUN logstash-plugin install logstash-output-jira
 RUN logstash-plugin install logstash-output-mongodb
 RUN logstash-plugin install logstash-filter-aggregate
 RUN logstash-plugin install logstash-filter-elapsed
