@@ -58,6 +58,8 @@ RUN set -ex; \
 		truncate --size=0 "$LS_SETTINGS_DIR/log4j2.properties"; \
 	fi
 
+RUN /usr/share/logstash/bin/logstash-plugin install logstash-filter-translate
+
 COPY docker-entrypoint.sh /
 RUN chmod 755 /docker-entrypoint.sh
 
